@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style type="text/css">
+		
+	</style>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="boostrap4/bootstrap/dist/css/bootstrap.min.css">
+	<script type="text/javascript" src="boostrap4/bootstrap/dist/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="jquery/dist/jquery.min.js"></script>
+</head>
+<body>
+	<nav class="navbar navbar-expand navbar-light " style="position: fixed;left: 0;right: 0;z-index: 1000;background-color: white;">
+		<a href="#" class="navbar-brand">Dima Beta Itachi</a>
+		<div class="collapse navbar-collapse">
+			<ul class="navbar-nav mr-auto">
+				<li class="nav-item">
+					<a href="#h" class="nav-link">Home</a>
+				</li>
+				<li class="nav-item">
+					<a href="#s" class="nav-link">Story</a>
+				</li>
+				<li class="nav-item">
+					<a href="#com" class="nav-link">Coment</a>
+				</li>
+			</ul>
+		</div>
+		<hr>
+	</nav>
+	<br>
+	<br>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-3">
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+			</div>
+			<div class="col-md-3">
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+				
+			</div>
+			<div class="col-md-3" id="h">
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+				
+			</div>
+			<div class="col-md-3">
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+				
+			</div>
+		</div>
+	</div>
+	<br>
+	<hr>
+	<br>
+	<div class="jumbotron" id="s">
+		<h2>Dima Itachi</h2>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	</div>
+	<br>
+	<br>
+	<hr>
+	<br>
+	<div class="panel panel-default" style="width: 500px;margin: 20px auto;" id="com">
+		<div class="panel-body">
+			<h2>Enter message:</h2>
+			<form>
+				<div class="form-group">
+					<input type="" name="" class="form-control" placeholder="Enter name"><br>
+					<textarea class="form-control" placeholder="Enter text..."></textarea>
+					<br>
+					<button class="btn btn-danger">Submit</button>
+				</div>
+
+			</form>
+		</div>
+	</div>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$(".nav-link").on("click",function(){
+				var offset = $(this.hash).offset();
+				if(offset){
+					$("html,body").animate({
+						scrollTop:offset.top
+					})
+				}
+			});
+		});
+	</script>
+</body>
+</html>
